@@ -1,0 +1,23 @@
+{
+    "name": "tianc/elk-for-laravel",
+    "require": {
+        "elasticsearch/elasticsearch": "^7.3"
+    },
+    "authors": [{
+        "name": "tianc",
+        "email": "tianc@51cashbox.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "Tianc\\Elk\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["Tianc\\Elk\\ElasticSearchClientProvider"],
+            "aliases": {
+                "Elk": "Tianc\\Elk\\Facades\\"
+            }
+        }
+    }
+}
